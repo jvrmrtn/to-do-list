@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <title>TO DO LIST</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/03/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="background">
+            <form action="" class="form" id="form">
+                <div class="form__title">
+                    <h1 class="">TO DO LIST</h1>
+                </div>
+                <input type="text" name="task" class="form__input" id="input" placeholder="Write your task here">
+                <div class="form__colors" id="colors">
+                    <div data-color="green" class="form__color green" name="color1"></div>
+                    <div data-color="yellow" class="form__color yellow"></div>
+                    <div data-color="red" class="form__color red"></div>
+                </div>
+                <input type="date" class="form__date" id="date" name="date">
+                <input type="submit" value="Send" class="form__submit" id="submit">
+            </form>
+            <div class="tasks">
+                <ul class="tasks__list" id="list"></ul>                
+                <p class="error" id="error"></p>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
